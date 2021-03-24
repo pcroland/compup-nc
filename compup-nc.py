@@ -20,7 +20,7 @@ parser = argparse.ArgumentParser(add_help=False, formatter_class=argparse.Argume
 parser.add_argument('-h', '--help',
                     action='help',
                     default=argparse.SUPPRESS,
-                    help='shows help message')
+                    help='show help message')
 parser.add_argument('-v', '--version',
                     action='version',
                     version='compup 1.0',
