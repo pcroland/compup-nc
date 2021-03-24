@@ -1,6 +1,7 @@
 # compup-nc
 ### Comparison feltöltő nCore-ra.
 ## Telepítés
+* `pip install requests`
 * `install -D -m 755 <(curl -fsSL git.io/JYTTu) ~/.local/bin/compup-nc`\
 (Ha a `~/.local/bin` nincs benne PATH-ban, akkor írjuk be a `.bashrc`/`.zshrc` fájlunkba hogy: `PATH="$HOME/.local/bin:$PATH"`.)
 * `hash -r`
