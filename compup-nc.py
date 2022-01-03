@@ -41,6 +41,9 @@ parser.add_argument('-w', '--width',
 parser.add_argument('-o', '--oxipng',
                     action='store_true',
                     help='use oxipng before uploading')
+parser.add_argument('--bithumen',
+                    action='store_true',
+                    help='generate bithumen compatible bb code')
 args = parser.parse_args()
 
 if len(sys.argv) == 1:
@@ -60,9 +63,11 @@ else:
 names = ' vs. '.join(names)
 
 width = math.floor(int(args.width) / length - 5)
-#print(thumb_width)
 
-print('[center][size=12pt][highlight]' + names + '[/highlight][/size]\n')
+if args.bithumen:
+    print('[center]' + names + '\n')
+else:
+    print('[center][size=12pt][highlight]' + names + '[/highlight][/size]\n')
 
 if not args.images:
     args.images = glob.glob('*.png')
