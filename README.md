@@ -1,5 +1,5 @@
 # compup-nc
-### Comparison feltöltő nCore-ra.
+### Comparison feltöltő nCore-ra és BitHUmenre.
 ## Telepítés
 * `pip install requests`
 * `install -D -m 755 <(curl -fsSL git.io/JYTTu) ~/.local/bin/compup-nc`\
