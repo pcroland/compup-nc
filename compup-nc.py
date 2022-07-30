@@ -16,7 +16,7 @@ def keksh(fl):
     link = 'https://i.kek.sh/' + r
     return link
 
-parser = argparse.ArgumentParser(add_help=False, formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+parser = argparse.ArgumentParser(add_help=False, formatter_class=lambda prog: argparse.RawTextHelpFormatter(prog, width=80, max_help_position=42))
 parser.add_argument('-h', '--help',
                     action='help',
                     default=argparse.SUPPRESS,
